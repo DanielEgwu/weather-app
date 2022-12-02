@@ -3,31 +3,39 @@ body {
 }
 
 
-:root{
---primary-color:#5e82f4
+:root {
+    --primary-color: #5e82f4
 }
-a:hover{
-    cursor:pointer
+
+* {
+    transition: 0.3s all ease-in
 }
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:50%;
-    position:relative;
-    height:19rem !important;
+a:hover {
+    cursor: pointer
 }
-.map-responsive iframe{
-    height:19rem !important;
-    width:100%;
-    position:absolute;
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 19rem !important;
 }
+
+.map-responsive iframe {
+    height: 19rem !important;
+    width: 100%;
+    position: absolute;
+}
+
 .card {
     border-color: #e2e8f0 !important;
     box-shadow: 5px 0px 35px 13px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
     border-radius: 17px !important;
     height: 19rem !important;
 }
-.map-responsive:hover{
-    
+
+.map-responsive:hover {
+
     transform: translate(0.36rem);
     transition: 0.3s all ease-in;
 }
@@ -36,16 +44,18 @@ a:hover{
     font-size: 80px !important;
     font-weight: 700 !important;
 }
-input{
+
+input {
     border: none !important
 }
-input:focus{
+
+input:focus {
     box-shadow: inset 0 -1px 0 #ddd !important;
 }
 
-p{
-    font-weight: 600 !important;  
-    font-size: 18px 
+p {
+    font-weight: 600 !important;
+    font-size: 18px
 }
 
 .card:hover {
@@ -53,10 +63,11 @@ p{
     transform: translate(0.36rem);
     transition: 0.3s all ease-in;
 }
-.small-card{
+
+.small-card {
     border-radius: 19px !important;
     height: 16.2rem !important;
-    width: 8rem;
+    width: 9.5rem;
     background-color: var(--primary-color);
 }
 
@@ -121,4 +132,10 @@ input {
     .location-btn {
         width: 100%
     }
+}
+
+.spinner-wrapper {
+    padding-top: 18rem;
+    text-align: center;
+    display: none
 }
